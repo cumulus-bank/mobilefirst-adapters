@@ -12,6 +12,7 @@
 
 	<displayName>banikingsvc</displayName>
 	<description>banikingsvc</description>
+
 	<connectivity>
 		<connectionPolicy xsi:type="http:HTTPConnectionPolicyType">
 			<protocol>https</protocol>
