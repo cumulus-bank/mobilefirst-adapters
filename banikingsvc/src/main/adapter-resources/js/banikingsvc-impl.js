@@ -129,6 +129,24 @@ function updateAccount(){
 	return result
 }
 
+
+/**
+ * @returns 
+ * @param tag 
+ */
+function deleteAccount(){
+	var input = {
+		    method : 'delete',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+		    path : '/listAccount/'+ tag
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+
 /**
  * @returns 
  */
