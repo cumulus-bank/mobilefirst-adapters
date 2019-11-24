@@ -76,6 +76,41 @@ function getAccount(){
 	return result
 }
 
+
+/**
+ * @returns 
+ * @param tag 
+ */
+function getAccountById(){
+	var input = {
+		    method : 'get',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+		    path : '/listAccount/'+ tag
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+
+/**
+ * @returns 
+ * @param tag 
+ */
+function getAccountByID(){
+	var input = {
+		    method : 'get',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+		    path : '/listAccountID/'+ tag
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+
 /**
  * @returns 
  */
