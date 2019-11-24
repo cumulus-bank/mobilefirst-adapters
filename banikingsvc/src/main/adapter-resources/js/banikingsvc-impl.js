@@ -230,18 +230,3 @@ function transaction(tag){
 	var result =  MFP.Server.invokeHttp(input);
 	return result
 }
-/**
- * @returns 
- */
-function getdata(){
-	var input = {
-		    method : 'get',
-			returnedContentType : 'json',
-			headers: {
-				"Content-Type" : "application/json",
-			},
-		    path : '/users'
-		};
-	var result =  MFP.Server.invokeHttp(input);
-	return result
-}

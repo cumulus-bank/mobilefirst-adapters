@@ -23,7 +23,6 @@
 		</connectionPolicy>
 	</connectivity>
 
-	<procedure name="getFeed"/>
 	<procedure name="addNewAccount" secured="false"/>
 	<procedure name="getAccount" secured="false"/>
 	<procedure name="getAccountById" secured="false"/>
