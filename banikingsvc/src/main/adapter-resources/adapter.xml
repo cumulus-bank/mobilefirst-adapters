@@ -24,6 +24,16 @@
 	</connectivity>
 
 	<procedure name="getFeed"/>
-	<procedure name="unprotected" secured="false"/>
+	<procedure name="addNewAccount" secured="false"/>
+	<procedure name="getAccount" secured="false"/>
+	<procedure name="getAccountById" secured="false"/>
+	<procedure name="getAccountByID" secured="false"/>
+	<procedure name="updateAccount" secured="false"/>
+	<procedure name="deleteAccount" secured="false"/>
+	<procedure name="activate" secured="false"/>
+	<procedure name="bill" secured="false"/>
+	<procedure name="balanceUpdate" secured="false"/>
+	<procedure name="transaction" secured="false"/>
+
 
 </mfp:adapter>
