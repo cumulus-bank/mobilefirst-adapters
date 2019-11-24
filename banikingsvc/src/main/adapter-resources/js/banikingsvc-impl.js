@@ -63,6 +63,22 @@ function addNewAccount(tag){
 /**
  * @returns 
  */
+function getAccount(){
+	var input = {
+		    method : 'get',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+		    path : '/listAccount'
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+
+/**
+ * @returns 
+ */
 function getdata(){
 	var input = {
 		    method : 'get',
