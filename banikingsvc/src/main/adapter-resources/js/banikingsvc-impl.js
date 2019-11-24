@@ -149,6 +149,68 @@ function deleteAccount(){
 
 /**
  * @returns 
+ * @param tag:
+ */
+function activate(tag){
+	var input = {
+		    method : 'post',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+			body: {
+				contentType: 'application/json' ,
+				content: tag
+			},
+		    path : '/activate'
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+
+/**
+ * @returns 
+ * @param tag:
+ */
+function bill(tag){
+	var input = {
+		    method : 'post',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+			body: {
+				contentType: 'application/json' ,
+				content: tag
+			},
+		    path : '/bill'
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+
+/**
+ * @returns 
+ * @param tag:
+ */
+function balanceUpdate(tag){
+	var input = {
+		    method : 'post',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+			body: {
+				contentType: 'application/json' ,
+				content: tag
+			},
+		    path : '/balanceUpdate'
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+/**
+ * @returns 
  */
 function getdata(){
 	var input = {
