@@ -111,6 +111,24 @@ function getAccountByID(){
 	return result
 }
 
+
+/**
+ * @returns 
+ * @param tag 
+ */
+function updateAccount(){
+	var input = {
+		    method : 'put',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+		    path : '/listAccount/'+ tag
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
+
 /**
  * @returns 
  */
