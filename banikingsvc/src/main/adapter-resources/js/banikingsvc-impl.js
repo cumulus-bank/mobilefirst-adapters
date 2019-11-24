@@ -209,6 +209,27 @@ function balanceUpdate(tag){
 	var result =  MFP.Server.invokeHttp(input);
 	return result
 }
+
+/**
+ * @returns 
+ * @param tag:
+ */
+function transaction(tag){
+	var input = {
+		    method : 'post',
+			returnedContentType : 'json',
+			headers: {
+				"Content-Type" : "application/json",
+			},
+			body: {
+				contentType: 'application/json' ,
+				content: tag
+			},
+		    path : '/transaction'
+		};
+	var result =  MFP.Server.invokeHttp(input);
+	return result
+}
 /**
  * @returns 
  */
