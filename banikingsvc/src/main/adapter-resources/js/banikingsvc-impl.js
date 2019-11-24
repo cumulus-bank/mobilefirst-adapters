@@ -81,7 +81,7 @@ function getAccount(){
  * @returns 
  * @param tag 
  */
-function getAccountById(){
+function getAccountById(tag){
 	var input = {
 		    method : 'get',
 			returnedContentType : 'json',
@@ -98,7 +98,7 @@ function getAccountById(){
  * @returns 
  * @param tag 
  */
-function getAccountByID(){
+function getAccountByID(tag){
 	var input = {
 		    method : 'get',
 			returnedContentType : 'json',
@@ -116,7 +116,7 @@ function getAccountByID(){
  * @returns 
  * @param tag 
  */
-function updateAccount(){
+function updateAccount(tag){
 	var input = {
 		    method : 'put',
 			returnedContentType : 'json',
@@ -134,7 +134,7 @@ function updateAccount(){
  * @returns 
  * @param tag 
  */
-function deleteAccount(){
+function deleteAccount(tag){
 	var input = {
 		    method : 'delete',
 			returnedContentType : 'json',
