@@ -34,9 +34,9 @@ function unprotected(param) {
 
 /**
  * @returns 
- * @param tag:
  */
 function addNewAccount(tag){
+
 	var input = {
 		    method : 'post',
 			returnedContentType : 'json',
