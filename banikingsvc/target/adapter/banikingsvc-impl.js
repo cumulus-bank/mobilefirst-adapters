@@ -72,7 +72,7 @@ function getAccount(){
 
 /**
  * @returns 
- * @param tag 
+ * @param tag
  */
 function getAccountById(tag){
 	var input = {
