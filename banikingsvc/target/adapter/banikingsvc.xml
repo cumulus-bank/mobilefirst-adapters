@@ -10,9 +10,9 @@
 
 	<connectivity>
 		<connectionPolicy xsi:type="http:HTTPConnectionPolicyType">
-			<protocol>https</protocol>
-			<domain>mobilefirstplatform.ibmcloud.com</domain>
-			<port>443</port>
+			<protocol>http</protocol>
+			<domain>account-svc-web-backend.clusterhouse-c4afa43ec152e314f7072ba02bde2f76-0001.us-south.containers.appdomain.cloud</domain>
+			<port>80</port>
 			<connectionTimeoutInMilliseconds>30000</connectionTimeoutInMilliseconds>
 			<socketTimeoutInMilliseconds>30000</socketTimeoutInMilliseconds>
 			<maxConcurrentConnectionsPerNode>50</maxConcurrentConnectionsPerNode>
