@@ -36,7 +36,6 @@ function unprotected(param) {
  * @returns 
  */
 function addNewAccount(tag){
-
 	var input = {
 		    method : 'post',
 			returnedContentType : 'json',
@@ -45,7 +44,7 @@ function addNewAccount(tag){
 			},
 			body: {
 				contentType: 'application/json' ,
-				content: tag
+				content: JSON.stringify(tag)
 			},
 		    path : '/listAccount'
 		};

@@ -44,7 +44,7 @@ function addNewAccount(tag){
 			},
 			body: {
 				contentType: 'application/json' ,
-				content: tag
+				content: JSON.stringify(tag)
 			},
 		    path : '/listAccount'
 		};
