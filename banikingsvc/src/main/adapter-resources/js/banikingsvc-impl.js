@@ -44,7 +44,7 @@ function addNewAccount(tag){
 				"Content-Type" : "application/x-www-form-urlencoded",
 			},
 			body: {
-				contentType: 'application/x-www-form-urlencoded' ,
+				contentType: 'application/json' ,
 				content: tag
 			},
 		    path : '/listAccount'
