@@ -34,17 +34,18 @@ function unprotected(param) {
 
 /**
  * @returns 
+ * @param tag
  */
 function addNewAccount(tag){
 	var input = {
 		    method : 'post',
 			returnedContentType : 'json',
 			headers: {
-				"Content-Type" : "application/json",
+				"Content-Type" : "application/x-www-form-urlencoded",
 			},
 			body: {
-				contentType: 'application/json' ,
-				content: JSON.stringify(tag)
+				contentType: 'application/x-www-form-urlencoded' ,
+				content: tag
 			},
 		    path : '/listAccount'
 		};
@@ -138,6 +139,7 @@ function deleteAccount(tag){
 	var result =  MFP.Server.invokeHttp(input);
 	return result
 }
+
 
 /**
  * @returns 
