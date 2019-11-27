@@ -37,11 +37,12 @@ function unprotected(param) {
  * @param tag
  */
 function addNewAccount(tag){
+	MFP.Logger.error(">>>>>>>>>" + JSON.stringify(tag));
 	var input = {
 		    method : 'post',
 			returnedContentType : 'json',
 			headers: {
-				"Content-Type" : "application/x-www-form-urlencoded",
+				"Content-Type" : "application/json",
 			},
 			body: {
 				contentType: 'application/json' ,
@@ -51,6 +52,15 @@ function addNewAccount(tag){
 		};
 	var result =  MFP.Server.invokeHttp(input);
 	return result
+}
+
+
+/**
+ * @returns 
+ */
+function test(tag){
+	MFP.Logger.error(">>>>>>>>>" + JSON.stringify(tag));
+    return {"hello" : JSON.stringify(tag)};
 }
 
 /**
