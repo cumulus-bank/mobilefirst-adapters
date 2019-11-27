@@ -58,14 +58,6 @@ function addNewAccount(tag){
 /**
  * @returns 
  */
-function test(tag){
-	MFP.Logger.error(">>>>>>>>>" + JSON.stringify(tag));
-    return {"hello" : JSON.stringify(tag)};
-}
-
-/**
- * @returns 
- */
 function getAccount(){
 	var input = {
 		    method : 'get',
